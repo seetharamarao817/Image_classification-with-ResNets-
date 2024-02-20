@@ -1,0 +1,8 @@
+pandas
+numpy
+torch
+torchvision
+tarfile
+PIL
+streamlit
+-e .
