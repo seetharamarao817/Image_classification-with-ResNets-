@@ -58,7 +58,7 @@ The interface allows users to upload images and view the predicted labels.
 
 **Screenshot of the User Interface**
 
-![screenshot](../testimages/Screenshot (116).png)
+![screenshot](https://github.com/seetharamarao817/Image_classification-with-ResNets-/blob/main/testimages/Screenshot%20(116).png)
 
 **Usage**
 
