@@ -1,6 +1,6 @@
 import torch
-from src.logger import logging
-from src.exception import CustomException
+from src.logging.logging import logging
+from src.exceptions.exceptions import CustomException
 import sys
 
 @torch.no_grad()

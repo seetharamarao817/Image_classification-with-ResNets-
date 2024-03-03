@@ -1,7 +1,12 @@
 import torch
-from src.logger import logging
-from src.exception import CustomException
+from src.logging.logging import logging
+from src.exceptions.exceptions import CustomException
 import sys
+from src.components.data_transformation import CIFAR10DataHandler
+from src.components.model_building import ResNet11
+from src.components.model_training import fit_one_cycle
+
+from src.uitls.uitls import DeviceDataLoader,to_device,get_default_device
 
 class TrainingPipeline:
     def __init__(self, data_dir, batch_size, num_workers=3, pin_memory=True):
@@ -37,6 +42,6 @@ if __name__ == "__main__":
         pin_memory = True
 
         training_pipeline = TrainingPipeline(data_dir, batch_size, num_workers, pin_memory)
-        history = training_pipeline.train(epochs=10, max_lr=0.01)
+        history = training_pipeline.train(epochs=1, max_lr=0.01)
     except CustomException as e:
         print("Custom Exception occurred:", e)

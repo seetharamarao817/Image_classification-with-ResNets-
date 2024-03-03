@@ -1,8 +1,9 @@
 import torch
 import sys
-from src.logger import logging
-from src.exception import CustomException
-from src.evaluation import evaluate  
+import torch.nn as nn
+from src.logging.logging import logging
+from src.exceptions.exceptions import CustomException
+from src.components.model_evaluation import evaluate  
 
 def get_lr(optimizer):
     try:

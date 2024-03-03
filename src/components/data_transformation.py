@@ -1,10 +1,11 @@
 import os
+import sys
 import torchvision.transforms as tt
 from torchvision.datasets import ImageFolder
 from torch.utils.data import DataLoader
 from torch.utils.data import random_split
-from src.logger import logging
-from src.exception import CustomException
+from src.logging.logging import logging
+from src.exceptions.exceptions import CustomException
 
 class CIFAR10DataHandler:
     def __init__(self, data_dir, batch_size, num_workers=3, pin_memory=True):

@@ -1,5 +1,5 @@
-
-
+import torch
+from src.uitls.uitls import get_default_device,to_device
 
 class ModelPredictor:
     def __init__(self, model):

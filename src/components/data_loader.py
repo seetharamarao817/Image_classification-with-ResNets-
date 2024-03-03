@@ -1,8 +1,8 @@
 import os
 import tarfile
 import sys
-from src.logger import logging
-from src.exception import CustomException
+from src.logging.logging import logging
+from src.exceptions.exceptions import CustomException
 
 class CIFAR10DataLoader:
     def __init__(self, archive_path='./cifar10.tgz', extract_dir='./data'):
